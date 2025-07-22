@@ -135,6 +135,7 @@ a {
 }
 
 .col:hover img {
+    cursor: pointer;
     display: none;
 }
 
