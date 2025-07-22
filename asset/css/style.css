@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
     top: 0;
+    z-index: 1000;
+
 }
 
 .header-container-data {
@@ -55,7 +57,6 @@
 
 .main-cont .col {
     width: calc((100% / 3) - (20px / 3));
-    /* flex-shrink: 0; */
 }
 
 .col img {
@@ -87,6 +88,34 @@
     color: black;
     font-weight: 100;
     text-decoration: line-through;
+}
+
+
+.col {
+    position: relative;
+}
+
+.discount-container {
+    position: absolute;
+    top: calc(80% - 60px);
+    display: flex;
+    gap: 5px;
+    z-index: 2;
+}
+
+.discount {
+    padding: 5px 8px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.discount-red {
+    background-color: #FD0202;
+}
+
+.discount-green {
+    background-color: #007F01;
 }
 
 /* footer */
