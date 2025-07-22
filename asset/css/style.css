@@ -178,6 +178,8 @@ a {
     width: 100%;
     height: 100px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container-data {
@@ -185,9 +187,35 @@ a {
     width: 60%;
     position: absolute;
     top: 25%;
+    display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    color: white;
 }
 
-.footer-container-data p {
-    color: white;
+.footer-container-data span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-container-data ul {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.footer-container-data ul.social {
+    font-size: 18px;
+}
+
+.footer-container-data ul.social li {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.footer-container-data ul.social li:hover {
+    transform: scale(1.1);
 }
