@@ -40,6 +40,11 @@
     list-style-type: none;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* MAIN */
 
 .main-cont {
@@ -118,8 +123,22 @@
     background-color: #007F01;
 }
 
-/* footer */
 
+.col .imgb {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.col:hover .imgb {
+    display: block;
+}
+
+.col:hover img {
+    display: none;
+}
+
+/* footer */
 
 .footer-container {
     background-color: #1A1A1A;
